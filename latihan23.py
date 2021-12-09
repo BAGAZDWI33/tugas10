@@ -1,4 +1,4 @@
-print("FINAL PROJECT FILE 6")
+print("LATIHAN")
  
 print("A. PENULISAN FORMAT NAMA YANG BENAR")
 nama = input ("Masukkan Nama Client: ")
