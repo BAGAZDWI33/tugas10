@@ -1,45 +1,27 @@
-nim = []
-nama = []
-asal = []
-
-pilihan = 1
-while pilihan != 0 :
-    print ("1. masukan data.")
-    print ("2. tampilkan data.")
-    print ("3. hapus data.")
-    print ("0. exit.")
-
-    pilihan = int(input("masukan pilihan anda : "))
-    print('')
-    print('')
-    print('')
-    if pilihan == 1 :
-        masnim = input("masukan nim : ")
-        nim.append({'nim' : masnim})
-        masnama = input("masukan nama : ")
-        nama.append({'nama' : masnama})
-        masasal = input("masukan asal : ")
-        asal.append({'asal' : masasal})
-        
-        
-    elif pilihan == 2 :
-        penentu = True
-        for i in range (len(nim)) :
-            if penentu :
-                print ("nim\tnama\tasal")
-            print (nim[i]['nim'],'\t',nama[i]['nama'],'\t',asal[i]['asal'])
-            penentu = False
-            
-    elif pilihan == 3 :
-        masnim = input("masukan nim : ")
-        for i in range (len(nim)) :
-            if masnim == nim[i]['nim'] :
-                print (i)
-                del nim[i]
-                del nama[i]
-                del asal[i]
-                break
-    print('')
-    print('')
-    print('')
-    
+print("FINAL PROJECT FILE 6")
+ 
+print("A. PENULISAN FORMAT NAMA YANG BENAR")
+nama = input ("Masukkan Nama Client: ")
+ 
+print("B.KETENTUAN PANJANG NOMOR TELEPON.")
+ulang="y"
+while ulang=="y":
+    import re
+    nomor=input("Masukkan Nomor Telepon: ")
+    hitung=len(str(nomor))
+    lis=list(str(nomor))
+    cek=nomor.count("+")
+    if hitung > 14 or hitung<10:
+        ulang = "y"
+        print("maksimal karakter 14 dan minimal 10 silahkan input ulang nomor")
+    elif lis[0] != "0" and cek == 0:
+        ulang = "y"
+        print("nomor harus diawali 0 atau gunakan +62")
+    else:
+        ulang="t"
+ 
+ 
+print("---------------------")
+print ("Nama : "+nama.title())
+print ("Nomor :",nomor)
+print("---------------------")
