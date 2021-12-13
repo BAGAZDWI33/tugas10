@@ -68,7 +68,7 @@ Untuk tugas yang kedua yaitu Tugas Praktikum, yaitu tugas untuk membuat program 
 
 Berikut source code yang telah saya buat :
 
-# -- encoding: utf-8 --
+#-- encoding: utf-8 --
 #indirarully
 
 P = print
