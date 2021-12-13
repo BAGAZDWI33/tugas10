@@ -48,7 +48,3 @@ print("Hapus kontak Dina")
 kontak.pop('Dina')
 print(kontak.items())
 print(30*"═")
-© 2021 GitHub, Inc.
-Terms
-Privacy
-Security
